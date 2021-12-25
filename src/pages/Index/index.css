@@ -1,0 +1,61 @@
+/* 移动指示点的位置让指示点 */
+.index .slider-decorator-0{
+
+    bottom: 12px !important;
+   
+}
+
+.nav img{
+    width: 30px;
+    height:auto ;
+}
+
+.nav {
+    font-size: 8px;
+    color:#b1aeae;
+    background-color: #ffff;
+   padding-top: 10px;
+}
+
+.am-flexbox-item{
+    text-align: center;
+}
+
+.search{
+    background-color:#ffff;
+}
+.search .am-search {
+padding: 0px 0px;
+background-color: #ffff;
+}
+
+.search .am-search-cancel{
+    padding-left:0px ;
+    
+}
+
+.search .am-search-input{
+    background-color: #f5f5f5;
+    border-radius: 19px 19px;
+    /* box-shadow: 0px 0px 2px #b1aeae ; */
+}
+
+.index{
+    position: relative;
+    z-index: 10;
+}
+
+.search{
+    position: fixed;
+    z-index: 10;
+    top:0%;
+    width: 100%;
+    height: 30px;
+}
+
+ .tabs{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;  
+    z-index: 5;
+}
