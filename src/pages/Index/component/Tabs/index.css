@@ -1,0 +1,12 @@
+ .tabs .am-tabs-default-bar-tab{
+    height: 35px;
+}
+
+.tabs{
+    margin-top:10px;
+}
+
+.tabs .am-tabs{
+    overflow:none !important;
+    position: static;
+}
