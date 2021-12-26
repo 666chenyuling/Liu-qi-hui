@@ -1,4 +1,5 @@
-import {renderRoutes} from 'react-router-config'
+import renderRoutes from '../../routes/renderRoutes'
+
 
 export const Root = ({ route }) => (
   <div>
