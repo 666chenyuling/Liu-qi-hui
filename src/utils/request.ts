@@ -36,14 +36,15 @@ request.interceptors.response.use(
   },
   (error) => {
     if (error.code === 'ECONNABORTED') {
-      Toast.fail({
-        // icon: 'fail',
+      Toast.show({
+        icon: 'fail',
         content: '登入超时',
       });
       return Promise.reject(error);
     }
     if (error.response.status === 401) {
-      Toast.fail({
+      Toast.show({
+        icon: 'fail',
         content: '您的登录已失效',
       });
     } else {
@@ -52,7 +53,8 @@ request.interceptors.response.use(
         const { data } = error.response;
         msg = data.message;
       }
-      Toast.fail({
+      Toast.show({
+        icon: 'fail',
         content: msg,
       });
     }

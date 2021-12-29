@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'
+// import 'antd-mobile/dist/antd-mobile'
+import 'antd/dist/antd.css';
+import '@/assets/font_home1/iconfont.css'
 
 
 ReactDOM.render(<App/>,

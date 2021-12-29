@@ -77,12 +77,6 @@ export class Index extends Component {
        this.getSwiper()
        
     }  
-
-       
- 
-
-     
-
     //渲染轮播图结构
     renderSwiper(){
       return this.state.swiper.map(item => (

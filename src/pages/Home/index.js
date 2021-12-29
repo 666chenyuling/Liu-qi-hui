@@ -39,7 +39,7 @@ const tabItems=[
 export class Home extends Component {
     state = {
         //默认选中tabBar
-        // selectedTab: this.props.location.pathname
+        selectedTab: this.props.location.pathname
         //用于控制tabBar的展示和隐藏，这个值应该为false，也就是不隐藏
         // hidden: false,
         // //全屏
@@ -81,6 +81,7 @@ render() {
        <Route path="/home/renwu" component={Renwu}/>
        <Route path="/home/adds" component={Adds}/>
        <Route path="/home/my" component={My}/>
+
 
         {/* <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}> */}
         <TabBar

@@ -7,7 +7,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
  * @param {String|Number} authed 当前账号权限,不传则可以访问该routes列表的所有路由
  * @param {Array} multipleRoutes 非switch路由列表，将会在Switch节点前渲染Route
  * @param {Object} extraProps 添加额外的Route props
- * @param {Object} switchProps Switch props
+ * @param {Object} switchProps Switch propsyarn
  */
 function renderRoutes(routes, authed, multipleRoutes, extraProps, switchProps) {
   let list = [];
