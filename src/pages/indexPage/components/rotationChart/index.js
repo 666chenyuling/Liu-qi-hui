@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Swiper, Toast } from 'antd-mobile'
+import { Swiper, Toast } from 'antd-mobile'
 import './index.css'
 
 export default function Rotation() {
@@ -20,10 +20,10 @@ export default function Rotation() {
 
   return (
     /* 循环播放 */
-    <Card>
+    
     <Swiper autoplay loop  style={{
       '--border-radius': '8px 8px 0px 0px',
     }}>{items}</Swiper>
-    </Card>
+   
   )
 }

@@ -28,3 +28,6 @@
   border-top: solid 1px var(--adm-border-color);
 }
 
+.adm-tab-bar-item-icon .iconClass{
+  font-size: 22px;
+}

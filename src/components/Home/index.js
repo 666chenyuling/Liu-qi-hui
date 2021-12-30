@@ -57,8 +57,9 @@ import  './index.css'
         <TabBar.Item
         title={item.title !=='发布'?item.title:null}
         key={item.key}
-        icon={<i className={`iconfont ${item.icon}`} style={item.title==='发布'?{fontSize:35 ,color:'rgb(30,85,198)'}:{}}></i>}
-        selectedIcon={<i className={`iconfont ${item.icon}`} style={item.title==='发布'?{fontSize:35 ,color:'rgb(30,85,198)'}:{}}></i>
+        icon={<i className={`iconfont ${item.icon} iconClass`} style={item.title==='发布'?{fontSize:35 ,color:'rgb(30,85,198)',position:'relative',
+        top: -8}:{}}></i>}
+        selectedIcon={<i className={`iconfont ${item.icon} `} style={item.title==='发布'?{fontSize:35 ,color:'rgb(30,85,198)'}:{}}></i>
         }
       >
       </TabBar.Item>
