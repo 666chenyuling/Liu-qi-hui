@@ -3,6 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { routes } from './routes/routerConfig'
 import React from 'react'
 import renderRoutes from './routes/renderRoutes'
+import './app.css'
+
 export default function App() {
   return (
     <BrowserRouter>

@@ -52,7 +52,7 @@ import  './index.css'
     }
   ]
   return (
-    <TabBar activeKey={pathname} onChange={value => setRouteActive(value)}>
+    <TabBar activeKey={pathname} className="tabBar" onChange={value => setRouteActive(value)}>
       {tabItems.map(item => (
         <TabBar.Item
         title={item.title !=='发布'?item.title:null}

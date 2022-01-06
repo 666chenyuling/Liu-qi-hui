@@ -1,3 +1,15 @@
 .tabClass{
   background-color: #ffff;
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 100px; */
+  overflow:none !important;
+  position: static;
+}
+
+.tabClass .adm-tabs-header{
+  position: sticky;
+  top:50px;
+  background-color: #ffff;
+
 }

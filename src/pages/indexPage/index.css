@@ -9,6 +9,19 @@
 }
 
 .spaceWrapper{
+  position: relative;
   width: 100%;
   background-color: rgb(224,224,224,0.4);
+  /* overflow-y: scroll; */
+}
+
+.homeWrapper{
+  width: 100%;
+  gap:0px !important ;
+  margin-top: 30px;
+}
+
+.searchTab{
+  position: fixed;
+  top:0px;
 }

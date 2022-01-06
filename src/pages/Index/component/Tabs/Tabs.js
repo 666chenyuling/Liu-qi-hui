@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, WhiteSpace } from 'antd-mobile';
+import { Tabs} from 'antd-mobile';
 import { StickyContainer, Sticky } from 'react-sticky';
 import './index.css'
 
@@ -34,8 +34,8 @@ function RenderTabBar(props) {
 //  }
 
 export  const MyTab = () => (
-  <div>
-    <WhiteSpace />
+  <>
+    
     <StickyContainer>
       <Tabs tabs={tabs}
         initialPage={'t2'}
@@ -74,8 +74,8 @@ export  const MyTab = () => (
         </div>
       </Tabs>
     </StickyContainer>
-    <WhiteSpace />
-  </div>
+    
+  </>
 );
 
 
