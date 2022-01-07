@@ -9,7 +9,12 @@
 
 .tabClass .adm-tabs-header{
   position: sticky;
+  z-index: 1000;
   top:50px;
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
 
+}
+
+.tabClass .adm-tabs-content{
+  background-color: rgb(255, 255, 255);
 }
