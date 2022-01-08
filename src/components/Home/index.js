@@ -16,13 +16,13 @@ import  './index.css'
   const { pathname } = location
 
   const setRouteActive = (value) => {
-    console.log(value)
+    console.log(pathname)
     history.push(value)
   }
   const tabItems=[
     { 
       key:"/home/index",
-      title:"首页",
+      title:"社区",
       icon:"icon-shouye"
      
     },
@@ -52,14 +52,14 @@ import  './index.css'
     }
   ]
   return (
-    <TabBar activeKey={pathname} className="tabBar" onChange={value => setRouteActive(value)}>
+    <TabBar  defaultActiveKey={"/home/adds"} className="tabBar" onChange={value => setRouteActive(value)}>
       {tabItems.map(item => (
         <TabBar.Item
-        title={item.title !=='发布'?item.title:null}
+        title={item.title }
         key={item.key}
-        icon={<i className={`iconfont ${item.icon} iconClass`} style={item.title==='发布'?{fontSize:35 ,color:'rgb(30,85,198)',position:'relative',
-        top: -8}:{}}></i>}
-        selectedIcon={<i className={`iconfont ${item.icon} `} style={item.title==='发布'?{fontSize:35 ,color:'rgb(30,85,198)'}:{}}></i>
+        icon={<i className={`iconfont ${item.icon} iconClass`} style={{ position:'relative',
+        top: 0}}></i>}
+        selectedIcon={<i className={`iconfont ${item.icon} iconClass `} style={{color:'rgb(30,85,198)'}}></i>
         }
       >
         
