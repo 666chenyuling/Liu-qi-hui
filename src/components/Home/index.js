@@ -34,7 +34,7 @@ import  './index.css'
     },
     {
       key:"/home/adds",
-      title:"发布",
+      title:"广场",
       icon:"icon-fabu"
      
     },

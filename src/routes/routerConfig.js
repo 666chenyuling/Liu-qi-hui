@@ -6,8 +6,9 @@ import {Redirect} from 'react-router-dom'
 import IndexPage from '@/pages/indexPage/index'
 import Renwu from '@/pages/Renwu/index'
 import Home from '@/components/Home/index'
-import My from '@/pages/My';
+// import My from '@/pages/My';
 import Adds from '@/pages/Adds/index'
+import MyPage from '@/pages/myPage/index'
 
 export const routes = [
   { path:'/',
@@ -38,7 +39,7 @@ export const routes = [
       {
         path:'/home/my',
         // exact:true,
-        component:My
+        component:MyPage
 
       }
 

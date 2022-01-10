@@ -1,0 +1,300 @@
+.outWrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 243, 243);
+}
+
+.allContain{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(rgba(0, 234, 255, 0.7), rgba(0, 234, 255,0));
+}
+
+.myWrapper{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-between;
+ align-items: stretch;
+ width: 100%;
+ height: 100px;
+/* border:1px solid red; */
+}
+
+.myContainIcon{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+
+ flex:2 2 20%;
+
+
+}
+
+.headIcon{
+width: 50px;
+height:50px ;
+border-radius: 25px 25px;
+margin-right: 12px;
+
+}
+
+.myContainEnm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex:6 4 60%;
+
+}
+
+.emptyContain{}
+
+.netName{
+  font-size: 19px;
+width: 100%;
+height: 25px;
+
+}
+
+.myIdentity{
+ width: 100%;
+ height: 15px;
+
+}
+
+.myContainSet{
+flex:2 2 20%;
+}
+
+.setIcons{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 100%;
+  height: 40px;
+
+}
+
+.scanCode{
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  font-size: 21px;
+
+}
+
+.setUp{
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  font-size: 21px;
+
+}
+
+.toIndexPage{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  
+
+}
+
+.toIndex{
+text-align: center;
+  width: 80%;
+  height: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 10px;
+  background-color: #fff;
+
+}
+
+.userCard{
+margin-left: 4%;
+margin-right: 4%;
+margin-top: 4%;
+background-image: linear-gradient(rgba(0, 234, 255, 0.712),rgba(0, 234, 255, 0.1))
+/* background-color: rgba(0, 234, 255, 0.349); */
+}
+
+.userWrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items: stretch;
+  /* background-color: rgba(0, 234, 255, 0.7); */
+  /* border: red 1px solid; */
+  width: 100%;
+  height: 70px;
+}
+
+  
+
+
+.addDosage{
+  width: 40%;
+  height: 100%;
+  flex:4 0 45%;
+  border-right: 1px solid rgba(0, 234, 255, 0.5);
+  /* border: springgreen 1px solid; */
+}
+
+.shop{
+  width: 40%;
+  height: 100%;
+  flex:4 0 45%;
+  /* border: springgreen 1px solid; */
+
+  
+
+
+}
+
+.addDosageChildOne{
+  display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: center;
+align-items: stretch;
+
+  text-align: center;
+}
+
+.addDosageChildTow{
+  text-align: center;
+}
+
+.shopChildOne{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  
+    text-align: center;
+}
+
+.shopChildTow{
+  text-align: center;
+}
+
+.cardRoll{
+ /* display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-between; */
+ margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%; 
+ /* background-color: rgba(0, 234, 255, 0.7); */
+}
+
+.adm-grid-item div{
+  text-align: center;
+ 
+}
+
+.cardRoll .adm-card-body {
+  padding: 0px;
+  text-align: center;
+}
+
+.task{
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+.taskHeader{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 25px;
+  
+}
+.taskHeaderOne{
+width: 20%;
+font-size: 15px;
+
+}
+.taskHeaderTow{
+width: 30%;
+font-size: smaller;
+color: rgb(156, 152, 152);
+padding-top:4px;
+padding-left: 5px;
+
+}
+.taskBody{
+   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  height: 70px;
+
+}
+.taskItem{
+  flex:25 0 25%;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+
+
+.taskFooter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 30px;
+ border-top: 1px solid rgba(211, 206, 206, 0.555);
+  
+}
+
+.taskFooterOne{
+width: 80%;
+
+}
+.taskFooterOne .adm-notice-bar{
+  border: 0px;
+}
+.taskFooterTow{
+font-size: smaller;
+width: 20%;
+color:rgba(0, 234, 255, 1);
+padding-top: 4px;
+padding-left: 10px;
+}
+
+
+.task .adm-card-body{
+  padding-bottom: 0px;
+}
+
+.taskFooterOne .adm-notice-bar .adm-notice-bar-left{
+color: rgba(0, 234, 255, 1) ;
+}
+
+.taskFooterOne .adm-notice-bar .adm-notice-bar-content{
+  font-size: smaller;
+}

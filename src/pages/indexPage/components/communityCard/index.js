@@ -24,10 +24,10 @@ export default function CommunityCard(props) {
  }
   return (
     <>
-    <div className='cardWrapper' style={{background:`url('${item.demoSrc}')`, borderRadius:'16px'}}>
+    <div className='cardWrapper' style={{background:`url('${item.demoSrc}')`, borderRadius:'8px'}}>
        <Card
           onBodyClick={onBodyClick}
-          style={{ borderRadius: '16px',background:` linear-gradient(to bottom right, ${item.cardColors[0]} , ${item.cardColors[1]})` , marginBottom:'10px' }}
+          style={{ borderRadius: '8px',background:` linear-gradient(to bottom right, ${item.cardColors[0]} , ${item.cardColors[1]})` , marginBottom:'10px' }}
           className='cardWrapper'
         >
         

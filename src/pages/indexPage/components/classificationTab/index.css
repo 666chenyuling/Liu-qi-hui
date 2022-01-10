@@ -5,7 +5,20 @@
   top: 100px; */
   overflow:none !important;
   position: static;
+  background-color: rgba(243,243,243);
+  padding-bottom: 12%;
 }
+.tabClass1{
+  background-color: #ffff;
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 100px; */
+  overflow:none !important;
+  position: static;
+  background-color: rgba(243,243,243);
+  padding-bottom: 80%;
+}
+
 
 .tabClass .adm-tabs-header{
   position: sticky;
@@ -16,5 +29,8 @@
 }
 
 .tabClass .adm-tabs-content{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(243, 243, 243,0);
+  padding-top: 0px;
+  height: 100%;
+ 
 }

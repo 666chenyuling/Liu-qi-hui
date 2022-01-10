@@ -1,4 +1,5 @@
 import React from 'react'
+import  { useState } from 'react'
 import { Tabs} from 'antd-mobile'
 import { StickyContainer} from 'react-sticky';
 import CommunityCard from '../communityCard'
@@ -115,6 +116,9 @@ const items=[
 ]
 
 function renderCards(cardMessages){
+  // if(cardMessages.length<=3){
+  //   setStyle((style)=>style===false)
+  // }
   return (cardMessages||[]).map(item=>(
    <CommunityCard item={item} key={item.key} cardKey={item.key} ></CommunityCard>
   ))
@@ -123,17 +127,19 @@ function renderCards(cardMessages){
 }
 
 export default function ClassificationTab() {
+
+  const [style,setStyle]=useState(true)
   const renderTabs=(items)=>{
     return (items||[]).map(item=>(
       <Tabs.Tab title={item.title} key={item.key}>
-        {renderCards(item?.cardMessages)}
+        {renderCards(item?.cardMessages,style,setStyle)}
     </Tabs.Tab>
     ))
   }
   return (
     <StickyContainer style={{height: 0}}>
     
-    <Tabs defaultActiveKey='1' className='tabClass' style={{
+    <Tabs defaultActiveKey='1' className={style?'tabClass':'tabClass1'} style={{
       '--title-font-size': '13px','overflow':'none'
     }}>
 
