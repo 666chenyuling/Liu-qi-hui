@@ -1,0 +1,13 @@
+.messageWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:nowrap;
+  
+}
+
+.messageWrapper .adm-list{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}

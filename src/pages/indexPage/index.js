@@ -18,6 +18,7 @@ import './index.css'
     <Card>
       {/* 轮播图 */}
     <Rotation/>
+    {/* 菜单列表 */}
     <ServiceList/>
     </Card>
     </Space>
