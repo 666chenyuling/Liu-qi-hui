@@ -9,6 +9,7 @@ import Home from '@/components/Home/index'
 // import My from '@/pages/My';
 import Adds from '@/pages/Adds/index'
 import MyPage from '@/pages/myPage/index'
+import MessagePage from '@/pages/messagePage/index'
 
 export const routes = [
   { path:'/',
@@ -26,6 +27,12 @@ export const routes = [
         // exact:true,
         component:IndexPage
       },
+      {
+        path:'/home/message',
+        component:MessagePage
+
+      },
+
       {
         path:'/home/renwu',
         // exact:true,
