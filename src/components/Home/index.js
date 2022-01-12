@@ -39,7 +39,7 @@ import  './index.css'
      
     },
     {
-      key:"/home/news",
+      key:"/home/message",
       title:"消息",
       icon:"icon-xiaoxi",
       
