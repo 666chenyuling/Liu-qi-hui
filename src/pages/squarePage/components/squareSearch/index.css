@@ -1,0 +1,41 @@
+.squareSearch{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+ 
+  /* border: 1px solid red; */
+  background-image:linear-gradient(rgba(0, 234, 255, 0.644), rgba(0, 234, 255, 0.486))
+}
+
+.inputClass{
+  /* width: 80%; */
+  height: 35px;
+flex:8 0 80%;
+/* border: 1px solid red; */
+/* align-self: center; */
+margin-top: 9px;
+margin-bottom: 4px;
+margin-left: 12px;
+}
+.inputClass .adm-search-bar .adm-search-bar-input-box{
+background-color: rgba(200, 199, 199, 0.404);
+}
+
+.iconStyle{
+flex:2 0 20%;
+/* border: 1px solid red; */
+height: 35px;
+margin-top: 9px;
+margin-left: -6px;
+text-align: center;
+
+}
+
+.iconStyle .iconfont{
+  font-size: 30px;
+  line-height: 30px;
+  color:rgba(22, 119, 255);
+ 
+
+}

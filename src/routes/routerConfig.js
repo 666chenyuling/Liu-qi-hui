@@ -7,9 +7,10 @@ import IndexPage from '@/pages/indexPage/index'
 import Renwu from '@/pages/Renwu/index'
 import Home from '@/components/Home/index'
 // import My from '@/pages/My';
-import Adds from '@/pages/Adds/index'
+// import Adds from '@/pages/Adds/index'
 import MyPage from '@/pages/myPage/index'
 import MessagePage from '@/pages/messagePage/index'
+import SquarePage from '@/pages/squarePage/index'
 
 export const routes = [
   { path:'/',
@@ -41,7 +42,7 @@ export const routes = [
       {
         path:'/home/adds',
         // exact:true,
-        component:Adds
+        component:SquarePage
       },
       {
         path:'/home/my',

@@ -21,6 +21,9 @@
   margin-top: 30px;
 }
 
+.homeWrapper .ant-space-item .adm-card{
+  background-image:linear-gradient(rgba(0, 234, 255, 0.966), rgba(0, 234, 255, 0.102));
+}
 .searchTab{
   position: fixed;
   top:0px;
