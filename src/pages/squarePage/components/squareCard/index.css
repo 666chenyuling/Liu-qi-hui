@@ -1,0 +1,26 @@
+.SquareCardClass{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.SquareCardWrapper{
+  width: 100%;
+}
+
+.squareHeard{
+
+}
+
+.squareText{
+
+}
+
+.squareImg{
+
+}
+
+.squareFooter{
+  
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 import {Tabs} from 'antd-mobile'
+import SquareCard from '../squareCard/index'
+
 export default function SquareMessage() {
   return (
     <div className="SquareMessageClass">
@@ -17,6 +19,7 @@ export default function SquareMessage() {
           <Tabs.Tab title='表白墙' key='confession ' />
           <Tabs.Tab title='职业' key='work' />
         </Tabs>
+        <SquareCard/>
     </div>
   )
 }
