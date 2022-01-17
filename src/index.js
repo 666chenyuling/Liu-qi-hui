@@ -4,6 +4,7 @@ import App from './App'
 // import 'antd-mobile/dist/antd-mobile'
 import 'antd/dist/antd.css';
 import '@/assets/font_home1/iconfont.css'
+import '@/assets/font_home2/iconfont.css'
 
 
 ReactDOM.render(<App/>,

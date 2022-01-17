@@ -1,8 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-import { Avatar, Image,Card } from 'antd-mobile'
+import { useState,useEffect } from 'react'
+import {Card,Avatar,Image,NavBar}from 'antd-mobile'
 import { MoreOutline  } from 'antd-mobile-icons'
 import {imgReady} from '@/utils/imgload'
+import '../squareCard/index.css'
 import './index.css'
 const demoAvatarImages = [
   'https://images.unsplash.com/photo-1548532928-b34e3be62fc6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
@@ -11,13 +12,22 @@ const demoAvatarImages = [
   'https://images.unsplash.com/photo-1546967191-fdfb13ed6b1e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
 ]
 
-export default function SquareCard(props) {
+export default function SquareComment(props) {
+  const right=(<div style={{fontSize:24}}>
+     <MoreOutline />
+  </div>)
+  useEffect(() => {
+    // console.log('aaaa');
+    console.log(props);
+  },[])
   const [showImg,setShowImg]=useState('none')
-  
+  const [follow,setFollow]=useState('关注')
   return (
-
-    <div className="SquareCardClass">
-    <Card style={{ borderRadius:0}}>
+    <div className="SquareCommentWrapper">
+       <NavBar right={right} onBack={()=>{}}>
+          详情
+        </NavBar>
+      <Card style={{ borderRadius:0}}>
       <div className='SquareCardWrapper'>
          <div className='squareHeard'>
            {/* 头像(挂件) */}
@@ -27,8 +37,8 @@ export default function SquareCard(props) {
              <div className='peopleNameChildOne'>{'古怪的兴义'}</div>
              <div className='peopleNameChildTow '>{'4天前'}</div>
            </div>
-           {/* 功能（收藏，不感兴趣，举报，取消） */}
-           <div className='peopleFunction'><MoreOutline  fontSize={24}/></div>
+           {/* 关注按钮 */}
+           <div className='peopleFunctionComment'><span className="followClass" onClick={()=>{setFollow('已关注')}} style={follow==='已关注'?{backgroundColor:'rgb(243, 243, 243)',color:'rgb(180, 180, 180)'}:{}}>{follow}</span></div>
          </div>
          <div className='squareText'>
            <div className='postsText'>
@@ -38,7 +48,7 @@ export default function SquareCard(props) {
             零零落落零零落落零零落落零零落落零零落落零零落落零零落落来了额sad <br/>sad萨达撒打算打算打大叔大叔大叔的撒打算大的坎坎坷坷坎坎坷坷坎坎坷坷坎坎坷坷坎坎坷坷111可口可乐坎坎坷坷快乐快乐快乐sodas
             <img src="" alt="" className="iconfont "/> 
            </div>
-        <div className="open">
+          <div className="open">
           <label htmlFor="check" className="btn"></label>
         </div>  
            </div>
@@ -50,18 +60,6 @@ export default function SquareCard(props) {
          <div className='squareImg'> 
             <Image style={{display:showImg}}/>
          </div>
-         <div className='squareFooter'>
-           <div className='squareFooterChildOne'>
-             <span  className="iconfont icon-dianzan" />{'点赞'}</div>
-           <div className='squareFooterChildTow'>
-           <span  className="iconfont icon-pinglun"
-           onClick={()=>{props.setFunction.setVisibleComment(true)}}/>{'评论'}
-           </div>
-           <div className='squareFooterChildThree'>
-           <span  className="iconfont icon-fenxiang" onClick={()=>{props.setFunction.setVisiblePo(true)}}/>{'分享'}
-           </div>
-         </div>
-
 
       </div>
     </Card>

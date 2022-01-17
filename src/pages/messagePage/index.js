@@ -22,13 +22,13 @@ export default function MessagePage() {
     
     <div className='messageWrapper'>
        <NavBar onBack={back} className='navBar'>标题</NavBar>
-       <List header='基础用法' className='defaultClass'>
+       <List  className='defaultClass'>
         <List.Item prefix={<Image width={30} height={30} src={dianzan}/>} onClick={() => {}}>点赞</List.Item>
         <List.Item prefix={<Image width={30} height={30} src={pinlun}/>} onClick={() => {}}>评论</List.Item>
         <List.Item prefix={<Image width={30} height={30} src={hudongxiaoxi}/>} onClick={() => {}}>互动消息</List.Item>
         <List.Item prefix={<Image width={30} height={30} src={qunxiaoxi}/>} onClick={() => {}}>群消息</List.Item>
       </List>
-      <List header='官方活动' className='activeClass'>
+      <List  className='activeClass'>
         <List.Item prefix={<Image width={30} height={30} src={remenhuodong}/>} onClick={() => {}}>热门活动</List.Item>
         <List.Item prefix={<Image width={30} height={30} src={xitongxiaoxi}/>} onClick={() => {}}>系统消息</List.Item>
         <List.Item prefix={<Image width={30} height={30} src={kefu}/>} onClick={() => {}}>我的客服</List.Item>

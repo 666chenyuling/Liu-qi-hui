@@ -1,0 +1,72 @@
+.SquareCommentWrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color:rgb(241, 241, 241);
+}
+
+.followClass{
+  height: 18px;
+  border-radius:8px ;
+  border: 1px solid red;
+  color:red;
+
+}
+
+.peopleFunctionComment{
+  flex:2 2 20%;
+  padding-left: 22px;
+}
+
+.postsText{
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-start;
+ margin:0px 10px ;
+ 
+}
+
+.text {
+  line-height: 1.5;
+  max-height: 4.5em;
+  overflow: hidden;
+  transition: all 1s;
+}
+.text::before {
+  content: '';
+  float: right;
+  height: 100%;
+  margin-bottom: -22px;
+  background: red
+}
+
+.btn {
+  float: left;
+  clear: both;
+  font-size: 14px;
+  color: #f00;
+}
+
+.vtext::before {
+  content: '...';
+  color: #333;
+  /* margin-right: 10px; */
+}
+
+.btn::after {
+  content: "展开";
+}
+#check {
+  display: none;
+}
+#check:checked+.text {
+  max-height: none;
+}
+#check:checked~.open>.btn::after {
+  content: "收起";
+}
+/* 隐藏省略号 */
+#check:checked+ .text>.vtext::before {
+  visibility: hidden;  
+}

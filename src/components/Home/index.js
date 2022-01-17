@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 
 import renderRoutes from '@/routes/renderRoutes'
 import { TabBar } from 'antd-mobile';
@@ -14,7 +15,10 @@ import  './index.css'
   const history = useHistory()
   const location = useLocation()
   const { pathname } = location
-
+  useEffect(() => {
+    history.push('/home/adds')
+    // console.log('aaaaa');
+  }, [])
   const setRouteActive = (value) => {
     console.log(pathname)
     history.push(value)
