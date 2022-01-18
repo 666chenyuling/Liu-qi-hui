@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react'
 import {Tabs,Popup} from 'antd-mobile'
 import SquareCard from '../squareCard/index'
 import SquareComment from '../squareComment/index'
+import {VisibleContext,VisibleDescriptionContext} from './store'
 
 export default function SquareMessage() {
   const [visiblePo,setVisiblePo]=useState(false)
   const [visibleComment,setVisibleComment]=useState(false)
+  const [visibleDescriptionRes,setVisibleDescriptionRes]=useState(false)
   return (
     <div className="SquareMessageClass">
          <Tabs
@@ -34,19 +36,31 @@ export default function SquareMessage() {
         }}
         bodyStyle={{ height: '40vh' }}>
         </Popup>
-        {/* 评论弹出框 */}
+        
+        <VisibleContext.Provider value={setVisibleComment}>
+          <VisibleDescriptionContext.Provider value={setVisibleDescriptionRes}>
+          {/* 评论弹出框 */}
         <Popup
               visible={visibleComment}
               onMaskClick={() => {
                 setVisibleComment(false)
               }}     
-              position='left'
-              bodyStyle={{ minWidth: '100vw' }}
+              position='right'
+              bodyStyle={{ minWidth: '100vw' ,backgroundColor:'rgb(243, 243, 243)'}}
             >
               {/* {visibleComment===true?SquareComment(setVisibleComment):{}} */}
             {/* <SquareComment setCommentFunction={{setVisibleComment}}/> */}
             <SquareComment></SquareComment>
          </Popup>
+         {/* 查看全部回复弹出框 */}
+         <Popup
+          visible={visibleDescriptionRes}
+          onMaskClick={() => {
+          setVisibleDescriptionRes(true)}}
+          bodyStyle={{ minHeight: '100vh' }}
+         ></Popup>
+         </VisibleDescriptionContext.Provider>
+         </VisibleContext.Provider>
     </div>
   )
 }

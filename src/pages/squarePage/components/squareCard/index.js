@@ -13,6 +13,7 @@ const demoAvatarImages = [
 
 export default function SquareCard(props) {
   const [showImg,setShowImg]=useState('none')
+  const [support,setSupport]=useState(false)
   
   return (
 
@@ -52,7 +53,7 @@ export default function SquareCard(props) {
          </div>
          <div className='squareFooter'>
            <div className='squareFooterChildOne'>
-             <span  className="iconfont icon-dianzan" />{'点赞'}</div>
+             <span  className="iconfont icon-dianzan" onClick={()=>{support===true?setSupport(false):setSupport(true)}} style={support===true?{color:'red'}:{}}/>{'点赞'}</div>
            <div className='squareFooterChildTow'>
            <span  className="iconfont icon-pinglun"
            onClick={()=>{props.setFunction.setVisibleComment(true)}}/>{'评论'}
