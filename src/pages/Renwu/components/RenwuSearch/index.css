@@ -1,0 +1,49 @@
+.RenwuSearchWrapper{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 10px;
+height: 35px;
+/* border: 1px solid red; */
+/* background-color:rgba(0, 234, 255, 0.74) ; */
+}
+.RenwuSearchFont{
+flex:3 3 30%;
+/* border: 1px solid blue; */
+
+}
+.RenwuSearchFont :nth-child(1){
+display: inline-block;
+border: 1px solid  rgba(0, 234, 255, 0.966) ;
+width: 6px;    
+height: 25px;
+margin-top: 2px;
+float: left;
+margin-left: 10px;
+border-radius: 2px 2px 2px 2px;
+background-color: rgba(0, 234, 255, 0.966);
+}
+.RenwuSearchFont :nth-child(2){
+display: inline-block;
+float: left;
+margin-left: 5px;
+font-size: 18px;
+}
+.RenwuSearchIcon{
+flex:7 7 70%;
+/* border: 1px solid blue; */
+height: 30px;
+
+
+}
+.RenwuSearchIconWrapper{
+width: 30px;
+height: 30px;
+float: right;
+margin-right: 10px;
+border-radius: 15px 15px;
+background-color:rgba(0, 234, 255, 0.698) ;
+text-align: center;
+padding-top: 3px;
+}

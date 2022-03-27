@@ -1,0 +1,79 @@
+.RenwuContentWrapper{
+    padding: 0% 3% 3% 3%;
+}
+.RenwuContentOne{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+height: 90px;
+/* border: 1px solid red; */
+} 
+.RenwuContentOneImg{
+flex:2 2 20%;
+/* border: 1px solid blue; */
+}
+.RenwuContentOneReq{
+flex:7 7 70%;
+/* border: 1px solid blue; */
+
+}
+.RenwuContentOneReqName{
+height: 33%;
+/* border: 1px solid green; */
+font-weight: 800;
+margin-left: 5px;
+}
+.RenwuContentOneReqTime{
+height: 33%;
+/* border: 1px solid green; */
+margin-left: 5px;
+}
+.RenwuContentOneReqTag{
+height: 33%;
+/* border: 1px solid green; */
+margin-left: 5px;
+}
+.RenwuContentOneIcons{
+ flex:1 1 10%;
+ 
+/* border: 1px solid blue; */
+
+}
+
+.RenwuContentTow{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+height: 50px;
+/* border: 1px solid red; */
+
+}
+.RenwuContentTowMon{
+flex:1 1 50%;
+/* border: 1px solid blue; */
+}
+.RenwuContentTowMonCommission{
+height: 25px;font-weight: 800;
+/* border: 1px solid green; */
+
+}
+.RenwuContentTowMonNewP{
+height: 25px;
+width: 70%;
+color: rgba(16,142,233,1);
+font-size: small;
+font-weight: 600;
+/* border: 1px solid green; */
+border-radius: 6px;
+
+
+}
+.RenwuContentTowBtn{
+ flex:1 1 50%;
+ /* border: 1px solid blue; */
+}
+.RenwuContentbtn{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
