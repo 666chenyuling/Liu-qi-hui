@@ -1,0 +1,68 @@
+.loginwrapper{
+height: 100vh;
+
+
+background-image:linear-gradient( rgba(0, 234, 255, 0.102),rgba(0, 234, 255, 0.966));
+}
+.adm-list-card .adm-list-body{
+   background-color: rgba(0, 234, 255, 0); 
+}
+.loginwrapperMargin{
+    margin: 0px 5%;
+}
+.logoWrapper{
+    height: 40px;
+}
+.changeTab{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+margin: 0 4%;
+}
+.changeTabOne{
+text-align: center;
+flex:1 1 50%;
+}
+.changeTabTow{
+text-align: center;
+flex:1 1 50%;
+/* background-color: ; */
+
+}
+
+.loginLinkWrapper{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: center;
+margin-bottom: 5px;
+margin-bottom: 10%;
+}
+.loginLinkForget{
+text-align: right;
+width: 30%;
+}
+.loginLinkregister{
+width: 30%;
+}
+
+.threeImgWrapper{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+}
+.threeImg{
+ margin:5px ;
+ width: 50px;
+ height: 50px;
+ text-align: center;
+  font-size: 8px;
+ border-radius:25px ;
+ /* border: 1px solid red; */
+}
+
+.threeImg img{
+    width: 40px;
+}
+

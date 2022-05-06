@@ -9,6 +9,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
  * @param {Object} extraProps 添加额外的Route props
  * @param {Object} switchProps Switch propsyarn
  */
+
 function renderRoutes(routes, authed, multipleRoutes, extraProps, switchProps) {
   let list = [];
   if (authed) authed = String(authed);
@@ -22,7 +23,6 @@ function renderRoutes(routes, authed, multipleRoutes, extraProps, switchProps) {
         render={(props) => {
           // renderRoutes里写了用户权限，自动往子路由下传，方便获取当前登录权限
           route.authed = authed;
-
           // auth是字符串则添加数组包裹,是数组则遍历字符串化，方便下面的判断
           if (typeof route.auth === "string" || typeof route.auth === "number") {
             route.auth = [route.auth.toString()];

@@ -9,7 +9,7 @@ const demoSrc =
 const demoSrc2= 'https://images.unsplash.com/photo-1620476214170-1d8080f65cdb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80'
 const items=[
   {
-   title:'Espresso',
+   title:'推荐',
    key:'1',   
    cardMessages:[
      {
@@ -71,7 +71,7 @@ const items=[
 
  },
  {
-  title:'Coffee Latte',
+  title:'我的社区',
   key:'2',
   cardMessages:[
     {
@@ -88,51 +88,51 @@ const items=[
 },
 
 {
-  title:'Americano',
+  title:'餐饮',
   key:'3',
   cardMessages:[]
 },
 {
-  title:'Flat White',
+  title:'旅游',
   key:'4',
   cardMessages:[]
 },
 {
-  title:'Caramel Macchiato',
+  title:'游戏',
   key:'5',
   cardMessages:[]
 },
 {
-  title:'Espresso',
+  title:'美妆',
   key:'6',
   cardMessages:[]
 },
 {
-  title:'Espresso',
+  title:'商业',
   key:'7',
   cardMessages:[]
   
 },
 ]
 
-function renderCards(cardMessages){
+function renderCards(cardMessages,setVisible){
   // if(cardMessages.length<=3){
   //   setStyle((style)=>style===false)
   // }
   return (cardMessages||[]).map(item=>(
-   <CommunityCard item={item} key={item.key} cardKey={item.key} ></CommunityCard>
+   <CommunityCard item={item} key={item.key} cardKey={item.key} setVisible={setVisible}  ></CommunityCard>
   ))
   
   
 }
 
-export default function ClassificationTab() {
+export default function ClassificationTab(props) {
 
   const [style,setStyle]=useState(true)
   const renderTabs=(items)=>{
     return (items||[]).map(item=>(
       <Tabs.Tab title={item.title} key={item.key}>
-        {renderCards(item?.cardMessages,style,setStyle)}
+        {renderCards(item?.cardMessages,props.setVisible,style,setStyle)}
     </Tabs.Tab>
     ))
   }

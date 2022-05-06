@@ -20,6 +20,7 @@ export default function CommunityCard(props) {
     ))
   }
   const onBodyClick=()=>{
+    props.setVisible(true)
   console.log('hhhhhhh'+cardKey);
  }
   return (

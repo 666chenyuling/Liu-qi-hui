@@ -5,9 +5,12 @@ import App from './App'
 import 'antd/dist/antd.css';
 import '@/assets/font_home1/iconfont.css'
 import '@/assets/font_home2/iconfont.css'
+import {StoreProvider} from '@/store/StoreContext'
 
-
-ReactDOM.render(<App/>,
+ReactDOM.render(
+<StoreProvider>
+  <App/>
+</StoreProvider>,
   document.getElementById('root')
 );
 

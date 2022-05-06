@@ -74,6 +74,10 @@ import  './index.css'
 }
 
 export default function Home({route}){
+  useEffect(() => {
+    console.log(route);
+    
+  }, [])
   return(
     <div className='app'>
       <div className='body'>

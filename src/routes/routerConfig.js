@@ -11,12 +11,17 @@ import Home from '@/components/Home/index'
 import MyPage from '@/pages/myPage/index'
 import MessagePage from '@/pages/messagePage/index'
 import SquarePage from '@/pages/squarePage/index'
+import Login from '@/pages/Login/index'
 
 export const routes = [
   { path:'/',
    exact:true,
    render: () => <Redirect to={"/home"} />
 
+  },
+  {
+   path:'/login',
+   component:Login
   },
   {
     path:'/home',
